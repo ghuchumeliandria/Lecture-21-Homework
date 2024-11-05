@@ -42,57 +42,166 @@ for (let i = 0; i < word.length; i++))
 
 15. მასივიდან [100, 200, 300, 400, 500] იმ ელემენტების გამოტანა, რომლებიც 250-ზე ნაკლებია:
 */
-console.log("Exam 1")
-for(i = 1; i <=15; i++){
-    if(i > 5)
-        {
-            console.log(`${i} მეტია 5 ზე`)
-        }
-        else{
-            console.log(i)
-    }
+console.log("Exam 1");
+for (i = 1; i <= 15; i++) {
+  if (i > 5) {
+    console.log(`${i} მეტია 5 ზე`);
+  } else {
+    console.log(i);
+  }
 }
-console.log("")
-console.log("Exam 2")
+console.log("");
+console.log("Exam 2");
 
 let exam2Numbers = [3, 6, 9, 12, 15];
 
-for(i = 0; i < exam2Numbers.length; i++){
-    if(exam2Numbers[i] % 2 === 0){
-        console.log(exam2Numbers[i])
-    }
-    else{
-        // console.log("რიცხვი კენტია")
+for (i = 0; i < exam2Numbers.length; i++) {
+  if (exam2Numbers[i] % 2 === 0) {
+    console.log(exam2Numbers[i]);
+  } else {
+    // console.log("რიცხვი კენტია")
+  }
+}
+
+console.log("");
+console.log("Exam 3");
+let wordOne = "sainteresoa";
+
+for (i = 0; i < wordOne.length; i++) {
+  if (wordOne.charAt(i) === "a") {
+    console.log(`${wordOne.charAt(i)} გამოტანა არ შეიძლება `);
+  } else {
+    console.log(wordOne.charAt(i));
+  }
+}
+
+console.log("");
+console.log("Exam 4");
+
+let colors = ["red", "green", "blue", "yellow"];
+
+for (i = 0; i < colors.length; i++) {
+  if (colors[i].length > 5) {
+    console.log(colors[i]);
+  } else {
+    // console.log("sorry")
+  }
+}
+console.log("");
+console.log("Exam 5");
+for (i = 1; i < 50; i++) {
+  if (i % 7 === 0) {
+    console.log(`${i} იყოფა 7 ზე`);
+  } else {
+    // ravi
+  }
+}
+console.log("");
+console.log("Exam 6");
+let exam6Nums = [4, 8, 12, 16, 20];
+
+for (i = 0; i < exam6Nums.length; i++) {
+  console.log(exam6Nums[i] * 2);
+}
+
+console.log("");
+console.log("Exam 7");
+
+let strJava = "javascript";
+
+for (i = 0; i < strJava.length; i++) {
+  if (strJava[i] === "j") {
+    break;
+  } else {
+    console.log(strJava[i]);
+  }
+}
+
+console.log("");
+console.log("Exam 8");
+
+let exam8Nums = [5, 10, 15, 20, 25];
+
+for (i = 0; i < exam8Nums.length; i++) {
+  if (exam8Nums[i] % 5 === 0) {
+    console.log(exam8Nums[i]);
+  } else {
+  }
+}
+console.log("");
+console.log("Exam 9");
+
+let hello = "hello world";
+for (i = 0; i < hello.length; i++) {
+  if (hello[i] !== "o") {
+    console.log(hello[i]);
+  } else {
+  }
+}
+console.log("");
+console.log("Exam 10");
+
+let exam10Nums = [1, 2, 3, 4, 5, 6];
+let evenSum = 0;
+for (i = 0; i < exam10Nums.length; i++) {
+  if (exam10Nums[i] % 2 == 0) {
+    evenSum += exam10Nums[i];
+  } else {
+  }
+}
+console.log(evenSum);
+
+console.log("");
+console.log("Exam 11");
+
+for (i = 1; i <= 10; i++) {
+  console.log(`${10}  *  ${i}  =  ${10 * i}`);
+}
+
+console.log("");
+console.log("Exam 12");
+
+let num12 = [2, 7, 4, 9, 5];
+
+for (i = 0; i < num12.length; i++) {
+  if (num12[i] > 4) {
+    console.log(num12[i] * 3);
+  } else {
+    console.log(num12[i]);
+  }
+}
+
+console.log("");
+console.log("Exam 13");
+
+for (i = 0; i <= 30; i++) {
+  if (i === 16) {
+    console.log(`${i} ნიკი რამდენი შეყვარებული გყავდა?`);
+  } else if(i >=10){
+    console.log(`${i} ვნახოთ აბა`)
+  }else{
+    console.log(i)
+  }
+}
+
+console.log("")
+console.log("Exam 14")
+
+let frontend = "frontend"
+
+for(i = 0; i <frontend.length; i++){
+    if(frontend[i] === 'e'){
+        console.log("ნაპოვნია e ")
     }
 }
 
-
 console.log("")
-console.log("Exam 3")
-let wordOne = "sainteresoa"
+console.log("Exam 15")
+let bigArray = [100, 200, 300, 400, 500];
 
-for(i = 0; i< wordOne.length; i++){
-    if(wordOne.charAt(i) === "a"){
-        console.log(`${wordOne.charAt(i)} გამოტანა არ შეიძლება `)
+for(i = 0; i < bigArray.length; i++){
+    if(bigArray[i] < 250){
+        console.log(bigArray[i])
     }
-    else{
-        console.log(wordOne.charAt(i))
-    }
-}
-
-
-console.log("")
-console.log("Exam 4")
-
-let colors = ["red", "green", "blue", "yellow"]
-
-for( i = 0; i < colors.length; i++){
-    if(colors[i].length > 5){
-        console.log(colors[i])
-        }
-        else{
-            // console.log("sorry")
-        }
-    }
-
     
+}
